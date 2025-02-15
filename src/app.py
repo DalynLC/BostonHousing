@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 from pickle import load
 
 app = Flask(__name__)
-model = load(open("/workspaces/BostonHousing/models/random_forest_regression.sav", "rb"))
+model = load(open(".../models/random_forest_regression.sav", "rb"))
 
 
 @app.route("/", methods = ["GET", "POST"])
